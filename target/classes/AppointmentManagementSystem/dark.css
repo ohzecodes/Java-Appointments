@@ -1,0 +1,181 @@
+.root{
+    -bgColor:#383838;
+    -fx-background-color: -bgColor;
+    -colorLight:#F2E9DC;
+    -colorBlue:#5480b6;
+    -colorSalmon: #ED6A5E;
+}
+
+Text{
+    -fx-font-smoothing-type: lcd;
+    -fx-fill:-colorLight ;
+    -fx-font-size: 11pt;
+}
+.button{
+    -fx-font-smoothing-type: lcd;
+    -fx-background-color: -colorBlue ;
+    -fx-text-fill: -colorLight;
+    -fx-border-style: solid;
+    -fx-border-color: -colorLight;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+
+#LoginButton{
+    -fx-padding: 7 0;
+}
+
+.choice-box {
+    -fx-background-color:-colorLight;
+}
+.text-field{
+    -fx-background-color:  #525252;
+    -fx-text-fill: -colorLight;
+
+}
+.titleText {
+    -fx-fill:  -colorSalmon;
+    -fx-font-size: 40px;
+
+}
+.radio-button{
+    -fx-text-fill: -colorLight;
+}  /*
+.text-field:disabled {
+  -fx-background-color: #d8ddde
+  -fx-text-fill: black;
+};*/
+
+
+.text-field:focused{
+    -fx-background-color:  none;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 0 2px;
+    -fx-border-radius: 0px;
+    -fx-border-color:  -colorSalmon;
+}
+.titleText1{
+
+    -fx-font-size: 30px;
+}
+.choice-box,.combo-box {
+    -fx-background-color: -bgColor;
+    -fx-border-color:-colorLight ;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+}
+.choice-box .list-cell,.combo-box .list-cell {
+    -fx-background-color: -bgColor;
+    -fx-text-fill:-colorLight;
+}
+.choice-box >.label ,.combo-box{
+    -fx-text-fill:-colorLight;
+    /*-fx-background-color: -bgColor;*/
+}
+.choice-box .context-menu {
+    -fx-background-color: -bgColor;
+    -fx-text-fill:-colorLight;
+}
+.choice-box .context-menu .label{
+    -fx-text-fill:-colorLight;
+}
+.choice-box .context-menu .menu-item:focused,
+.choice-box .context-menu .menu-item:selected,
+.combo-box .list-view .list-cell:selected,
+.combo-box .list-cell:hover,
+.combo-box .list-view .list-cell:filled:selected {
+    -fx-background-color: -colorBlue;
+}
+
+
+
+
+TitledPane > .title {
+    -fx-text-fill: -colorLight;
+    -fx-background-color: -bgColor;
+    -fx-border-color: -colorLight;
+    -fx-border-width: 1px;
+}
+TitledPane {
+    -fx-text-fill: -colorLight;
+}
+TitledPane > .title > .arrow-button > .arrow {
+    -fx-background-color: -colorLight;
+}
+TitledPane > .title > .arrow-button {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+TitledPane > .content {
+    -fx-background-color: transparent;
+    -fx-border-color: -colorLight;
+    -fx-border-width: 1px;
+
+}
+
+TitledPane:expanded .title  {
+    -fx-border-width: 1px 1px 0 1px;
+}
+
+
+.table-view .column-header  {
+    -fx-background-color: #cfc8a0;
+}
+
+.table-view:focused {
+    -fx-focus-color: transparent;
+}
+.table-row-cell {
+    -fx-background-color: #e4e6f1;
+    -fx-border-color: -colorBlue;
+    -fx-border-width: 0 0 1 0;
+}
+.table-row-cell:selected {
+    -fx-background-color:-colorBlue;
+}
+
+
+.date-picker-popup  .month-year-pane{
+    -fx-background-color:-colorSalmon ;
+}
+
+.date-picker-popup  .month-year-pane  .button{
+    -fx-background-color: transparent;
+    -fx-text-fill: white ;
+    -fx-border-width: 0;
+}
+.date-picker  {
+    -fx-background-color: transparent;
+}
+
+.date-picker-popup > .content > .month-year-pane > .label {
+    -fx-font-size: 14px;
+}
+
+.date-picker-popup > .content > .calendar-grid > .calendar-date-cell {
+    -fx-background-color: #f2f2f2;
+}
+
+.date-picker-popup > .content > .calendar-grid > .calendar-date-cell:hover {
+    -fx-background-color: #e6e6e6;
+}
+
+.date-picker-popup > .content > .calendar-grid > .calendar-date-cell:selected {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+.search:focused {
+    -fx-border-width: 1 1 0 1;
+}
+
+.titleLabel {
+    -fx-text-fill:-colorLight;
+    -fx-font-size: 25;
+}
+.subTextLabel{
+    -fx-text-fill:-colorLight;
+    -fx-font-size: 15;
+}
+
+

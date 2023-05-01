@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="312.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppointmentManagementSystem.LoginCtrl">
+  <children>
+    <Text fx:id="SchedulerTxt" layoutX="0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          styleClass="titleText" text="%SCHEDULER" textAlignment="CENTER" wrappingWidth="312.0">
+      <font>
+        <Font name="Arial" size="36.0" />
+      </font>
+    </Text>
+    <Text fx:id="UNameText" layoutX="70.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0"  text="%USERNAME" />
+    <TextField fx:id="UserNameField" layoutX="70.0" layoutY="140.0" prefWidth="160.0" />
+    <Text fx:id="UPassText" layoutX="70.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0"  text="%PASSWORD" />
+    <PasswordField id="PasswordField" fx:id="PasswordField" layoutX="70.0" layoutY="187.0" prefWidth="160.0" />
+    <Button id="LoginButton" fx:id="LoginButton" layoutX="70.0" layoutY="227.0" prefWidth="160.0" mnemonicParsing="false" text="%LOGIN" />
+    <Text fx:id="TimeZoneText" layoutX="70.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%TIMEZONE" textAlignment="CENTER" wrappingWidth="160.0" />
+    <Text fx:id="LangText" layoutX="74.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%LANGUAGE" />
+    <ChoiceBox fx:id="LanguageChoiceBox" layoutX="74.0" layoutY="328.0" prefWidth="150.0" />
+
+
+  </children>
+</AnchorPane>

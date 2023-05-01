@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppointmentManagementSystem.MultipleReports">
+        <children>
+            <Button fx:id="BackBtn" layoutX="5" layoutY="5" text="Back" />
+
+            <TableView fx:id="AppointmentTable" layoutX="50.0" layoutY="123.0" prefHeight="200.0" prefWidth="908.0">
+                <columns>
+                    <TableColumn fx:id="AppointmentId" prefWidth="50.0" text="%APPOINTMENTID" />
+                    <TableColumn fx:id="Title" prefWidth="90.0" text="%TITLE" />
+                    <TableColumn fx:id="Location" prefWidth="100.0" text="%LOCATION" />
+                    <TableColumn fx:id="TYPE" prefWidth="80.0" text="%TYPE" />
+                    <TableColumn fx:id="StarTime" prefWidth="80.0" text="%STARTTIME" />
+                    <TableColumn fx:id="EndTime" prefWidth="80.0" text="%ENDTIME" />
+                    <TableColumn fx:id="StartDate" prefWidth="80.0" text="%STARTDATE" />
+                    <TableColumn fx:id="EndDate" prefWidth="80.0" text="%ENDDATE" />
+                    <TableColumn fx:id="CustomerName" prefWidth="100.0" text="%CUSTOMER_NAME" />
+                    <TableColumn fx:id="RepName" prefWidth="80.0" text="%REPRESENTATIVENAME" />
+                    <TableColumn fx:id="RepEmail" prefWidth="80.0" text="%REPRESENTATIVEEMAIL" />
+                    <TableColumn fx:id="RepPhone" prefWidth="80.0" text="%REPRESENTATIVEPHONE" />
+                </columns>
+            </TableView>
+            <Text fx:id="count" layoutX="69.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Count" />
+            <HBox fx:id="hbox" layoutX="250" layoutY="28" prefHeight="50.0" prefWidth="500" />
+      <VBox layoutX="96.0" layoutY="31.0" prefHeight="58.0" prefWidth="137.0">
+         <children>
+      
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="What type of report " />
+                  <ComboBox fx:id="whichCombo" prefWidth="150.0" />
+         </children>
+      </VBox>
+        </children>
+    </AnchorPane>

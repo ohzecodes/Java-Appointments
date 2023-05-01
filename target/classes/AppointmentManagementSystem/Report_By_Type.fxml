@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="399.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppointmentManagementSystem.ReportByTypeCtrl">
+   <children>
+       <Button fx:id="BackBtn" layoutX="5" layoutY="5" text="Back" />
+       <Label alignment="CENTER" layoutY="37.0" prefHeight="57.0" prefWidth="463.0" styleClass="titleLabel" text="Appointment Type by Month" wrapText="true" />
+       <Label alignment="CENTER" layoutX="1.0" layoutY="103.0" prefHeight="15.0" prefWidth="463.0" styleClass="subTextLabel" text="The total number of customer appointments by type in a particular month" textAlignment="CENTER" />
+
+      <TableView fx:id="reportTbl" layoutX="178.0" layoutY="164.0" prefHeight="200.0" prefWidth="268.0">
+        <columns>
+          <TableColumn fx:id="type" prefWidth="123.0" text="%TYPE" />
+          <TableColumn fx:id="countTC" prefWidth="144.0" text="%COUNT" />
+        </columns>
+      </TableView>
+      <VBox layoutX="45.0" layoutY="136.0" prefHeight="228.0" prefWidth="100.0">
+         <children>
+
+            <RadioButton fx:id="January" mnemonicParsing="false" prefHeight="18.0" prefWidth="112.0" text="January">
+               <toggleGroup>
+                  <ToggleGroup fx:id="MONTH" />
+               </toggleGroup>
+            </RadioButton>
+             <RadioButton fx:id="February" mnemonicParsing="false" prefHeight="18.0" prefWidth="130.0" text="February" toggleGroup="$MONTH" />
+             <RadioButton fx:id="March" mnemonicParsing="false" prefHeight="18.0" prefWidth="116.0" text="March" toggleGroup="$MONTH" />
+             <RadioButton fx:id="April" mnemonicParsing="false" prefHeight="18.0" prefWidth="140.0" text="April" toggleGroup="$MONTH" />
+             <RadioButton fx:id="May" mnemonicParsing="false" prefHeight="18.0" prefWidth="162.0" text="May" toggleGroup="$MONTH" />
+             <RadioButton fx:id="June" mnemonicParsing="false" prefHeight="18.0" prefWidth="142.0" text="June" toggleGroup="$MONTH" />
+             <RadioButton fx:id="July" mnemonicParsing="false" prefHeight="18.0" prefWidth="169.0" text="July" toggleGroup="$MONTH" />
+             <RadioButton fx:id="August" mnemonicParsing="false" prefHeight="18.0" prefWidth="143.0" text="August" toggleGroup="$MONTH" />
+             <RadioButton fx:id="September" mnemonicParsing="false" prefHeight="18.0" prefWidth="121.0" text="September" toggleGroup="$MONTH" />
+             <RadioButton fx:id="October" mnemonicParsing="false" prefHeight="18.0" prefWidth="155.0" text="October" toggleGroup="$MONTH" />
+             <RadioButton fx:id="November" mnemonicParsing="false" prefHeight="18.0" prefWidth="155.0" text="November" toggleGroup="$MONTH" />
+             <RadioButton fx:id="December" mnemonicParsing="false" prefHeight="18.0" prefWidth="117.0" text="December" toggleGroup="$MONTH" />
+         
+         </children>
+      </VBox>
+
+
+   </children>
+</AnchorPane>

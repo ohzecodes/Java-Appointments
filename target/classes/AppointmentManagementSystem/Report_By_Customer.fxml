@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="399.0" prefWidth="463.0"  xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="AppointmentManagementSystem.ReportByCustomerCtrl">
+    <children>
+        <Button fx:id="BackBtn" layoutX="5" layoutY="5" text="Back" />
+        <TableView fx:id="reportTbl" layoutX="98.0" layoutY="136.0" prefHeight="200.0" prefWidth="268.0">
+            <columns>
+                <TableColumn fx:id="customer" prefWidth="165.0" text="%CUSTOMER_NAME" />
+                <TableColumn fx:id="countTC" prefWidth="102.0" text="%COUNT" />
+            </columns>
+        </TableView>
+        <Label styleClass="titleLabel" layoutX="45.0" layoutY="11.0" prefHeight="105.0" prefWidth="354.0" text="Total Number of Appointment of Customer Name" textAlignment="CENTER" wrapText="true" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="696.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppointmentManagementSystem.CustomerAddOrModCtrl">
+  <children>
+    <Text fx:id="PageTitle" layoutX="12.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText1" textAlignment="CENTER" wrappingWidth="488.0">
+      <font>
+        <Font name="Arial" size="45.0" />
+      </font>
+    </Text>
+
+    <GridPane layoutX="49.0" layoutY="97.0" prefHeight="260.0" prefWidth="415.0">
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+        <TextField fx:id="CUSTOMER_ID" GridPane.columnIndex="1" />
+        <TextField fx:id="CUSTOMER_NAME" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%CUSTOMERID" textAlignment="CENTER" wrappingWidth="203.0" GridPane.rowIndex="0">
+          <font>
+            <Font name="Arial Bold" size="13.0" />
+          </font>
+        </Text>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%CUSTOMER_NAME" textAlignment="CENTER" wrappingWidth="200.0" GridPane.rowIndex="1">
+          <font>
+            <Font name="Arial Bold" size="13.0" />
+          </font>
+        </Text>
+
+
+
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%STATE" textAlignment="CENTER" wrappingWidth="200.0" GridPane.rowIndex="3">
+          <font>
+            <Font name="Arial Bold" size="13.0" />
+          </font>
+        </Text>
+
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%COUNTRY" textAlignment="CENTER" wrappingWidth="200.0" GridPane.rowIndex="2">
+          <font>
+            <Font name="Arial Bold" size="13.0" />
+          </font>
+        </Text>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%POSTAL" textAlignment="CENTER" wrappingWidth="200.0" GridPane.rowIndex="4">
+          <font>
+            <Font name="Arial Bold" size="13.0" />
+          </font>
+        </Text>
+        <ComboBox fx:id="COUNTRY" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <ComboBox fx:id="STATE" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="Postal" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      </children>
+    </GridPane>
+    <Text fx:id="errors" layoutX="83.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="312.21630859375" />
+
+<TitledPane collapsible="false" expanded="true" layoutX="65.0" layoutY="367.0" prefHeight="222.0" prefWidth="403.0"  text="Representative">
+  <content>
+            <GridPane layoutX="50" prefHeight="117.0" prefWidth="344.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.0" minWidth="10.0" prefWidth="175.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="257.0" minWidth="10.0" prefWidth="169.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%REPRESENTATIVENAME" textAlignment="CENTER" wrappingWidth="168.21630859375" />
+                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%REPRESENTATIVEEMAIL" textAlignment="CENTER" wrappingWidth="171.21630859375" GridPane.rowIndex="1" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%REPRESENTATIVEPHONE" textAlignment="CENTER" wrappingWidth="169.21630859375" GridPane.rowIndex="2" />
+                  <TextField fx:id="RepName" GridPane.columnIndex="1" />
+                  <TextField fx:id="RepEmail" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="RepPhone" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%REPRESENTATIVEDEPARTMENT" textAlignment="CENTER" wrappingWidth="169.21630859375" GridPane.rowIndex="3" />
+               <TextField fx:id="RepDept" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+  </content>
+</TitledPane>
+      <ButtonBar layoutX="161.0" layoutY="609.0" prefHeight="40.0" prefWidth="186.0">
+        <buttons>
+          <Button fx:id="CancelBtn" mnemonicParsing="false" prefHeight="39.0" prefWidth="77.0" text="Cancel" />
+          <Button fx:id="SaveBtn" mnemonicParsing="false" prefHeight="39.0" prefWidth="91.0" text="Save" />
+        </buttons>
+      </ButtonBar>
+  </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+FROM mysql:latest
+EXPOSE 3306
+
+COPY ./dbDump.sql /docker-entrypoint-initdb.d/
